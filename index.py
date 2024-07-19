@@ -19,13 +19,13 @@ while( True ):
     elif(s == "3"):
         functions.deleteUser()  
     elif(s == "4"):    
-        print("'Show a User' selected")
-        user_class.User.showUserByNameDate(input("Please enter a name or date identifier: "))
+        print("'Show User' selected from DB")
+        user_class.User.loadUsers()
     #Select only one user from DB
     elif(s == "5"):
         functions.save_database()      
     #Savw changes made to DB
-    elif(s == "7"):
+    elif(s == "6"):
         print("Quitting Program....")
        
         functions.determineState()
