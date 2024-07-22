@@ -18,14 +18,10 @@ while( True ):
         user_class.User.addUser()
     elif(s == "3"):
         functions.deleteUser()  
-    elif(s == "4"):    
-        print("'Show User' selected from DB")
-        user_class.User.loadUsers()
-    #Select only one user from DB
-    elif(s == "5"):
+    elif(s == "4"):
         functions.save_database()      
     #Savw changes made to DB
-    elif(s == "6"):
+    elif(s == "5"):
         print("Quitting Program....")
        
         functions.determineState()

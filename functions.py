@@ -19,15 +19,15 @@ def grabAge():
         if(len(age) > 0 and len(age) < 100 ):
             return age
         else:
-            print("Incorrect age format!\nEnter age between 1 to 100 ")
+            print("System catched an Error!/nIncorrect age format!\nEnter age between 1 to 100 ")
 
 def grabHeight():
   while(True):
    height = int(input("Please enter a user's height in CM:"))
    if(height >= 1 and height <= 300 ): 
      return height
-  else:
-   print("Incorrect Weight format!\n")
+   else:
+    print("System catched an Error!/nIncorrect Weight format!\nEnter Height between 1 to 300")
 
 
 def grabWeight():
@@ -36,7 +36,7 @@ def grabWeight():
         if(weight >= 1 and weight <= 500 ):
             return weight
         else:
-            print("Incorrect Weight format!\nEnter Weight between 1 to 500 ")
+            print("System catched an Error!/nIncorrect Weight format!\nEnter Weight between 1 to 500 ")
 def grabCompany():
     while(True):
         cpn = str(input("Please enter a user's Company he works: "))
@@ -96,9 +96,8 @@ def display_home_message():
           1 - See Current Users
           2 - Add User
           3 - Delete User
-          4 - Show a User selected from DB
-          5 - Save Database
-          6 - Quit\n""")
+          4 - Save Database
+          5 - Quit\n""")
 
     return s
 
